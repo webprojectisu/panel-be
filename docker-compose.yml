@@ -1,0 +1,29 @@
+services:
+  db:
+    image: mysql:8.0
+    container_name: panel_db
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: panel_db
+      MYSQL_USER: panel_user
+      MYSQL_PASSWORD: panel_pass
+    ports:
+      - "3308:3306"
+    volumes:
+      - panel_db_data:/var/lib/mysql
+    networks:
+      - panel_network
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-prootpassword"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  panel_db_data:
+    driver: local
+
+networks:
+  panel_network:
+    driver: bridge
