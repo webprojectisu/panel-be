@@ -34,6 +34,7 @@ app = FastAPI(
     description="Backend API for a dietitian management application.",
     version="1.0.0",
     lifespan=lifespan,
+    root_path="/api",
 )
 
 # ---------------------------------------------------------------------------
