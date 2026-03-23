@@ -10,7 +10,14 @@ A modern digital clinic management system designed for dietitians.
 
 ## Screenshots
 
-![Dashboard](screenshots/dashboard.PNG)
-![Clients](screenshots/client.PNG)
-![Appointments](screenshots/appointment.PNG)
-![Recipes](screenshots/recipe.PNG)
+
+
+<p align="center">
+  <img src="screenshots/dashboard.PNG" width="45%"/>
+  <img src="screenshots/client.PNG" width="45%"/>
+</p>
+
+<p align="center">
+  <img src="screenshots/appointment.PNG" width="45%"/>
+  <img src="screenshots/recipe.PNG" width="45%"/>
+</p>
