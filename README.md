@@ -8,7 +8,7 @@ A modern digital clinic management system designed for dietitians.
 - Nutrition program tracking
 - Reports & analytics
 
-## Screenshots## Screenshots
+## Screenshots
 
 ![Dashboard](screenshots/dashboard.PNG)
 ![Clients](screenshots/client.PNG)
